@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Capítulo 1 JavaScript</title>
+    </head>
+    <body>
+
+
+
+        <script>
+        //Exercício 1
+        /*
+        var endereco = {
+            rua : "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        function usuarioMoraEm(entrada){
+            return 'O usuário mora em '+entrada.cidade+' / '+
+            entrada.uf + ', no bairro '+entrada.bairro+', na rua "'+entrada.rua+
+            '" com n° '+entrada.numero+'.';
+        }
+        
+        console.log(usuarioMoraEm(endereco));
+        */
+
+        //Exercício2
+/*
+        function pares(x,y){
+            for ( index = x; index <= y; index++) {
+                if (index % 2 == 0){
+                    console.log(index);
+                }
+                
+            }
+        }
+
+        pares(32, 321);
+        */
+        /*
+        //Exercício 3
+        function temHabilidade(skills){
+           return (skills.indexOf("Javascript") != -1 ) ? true : false;
+        }
+
+        var skills = [ "ReactJS","Javascript", "React Native"];
+        console.log(temHabilidade(skills));
+        */
+        /*
+        //Exercício 4
+        function experiencia(anos){
+            if(anos <= 1){
+                return "Iniciante";
+            }
+            else if (anos <= 3){
+                return "Intermediário";
+            }
+            else if (anos <= 6){
+                return "Avançado";
+            }
+            else {
+                return "Jedi Master";
+            }
+        }
+
+        console.log(experiencia(10));
+        */
+        
+
+        function retornaSkill(usuario){
+            for (user of usuario) {
+                console.log("O "+user.nome+" possui as habilidades: "+user.habilidades.join(", "));
+            }
+        }
+
+        var usuarios = [
+            {
+                nome: "Diego",
+                habilidades : [ "ReactJS","Javascript", "React Native"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ];
+
+        retornaSkill(usuarios);
+        
+        </script>
+    </body>
+</html>
