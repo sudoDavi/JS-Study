@@ -1,38 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import { BrowserRouter, Link, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import "./styles.css";
 
-export default class Header extends Component{
-    state = {
-        path: window.location.pathname,
-    }
+const Header = () => (
 
-    componentDidMount(){
-        const currentPath = window.location.pathname;
+    <header id="main-header">
+        <Link to="/">JSHunt</Link>
+    </header>
 
-        const path = currentPath;
+)
 
-        this.setState({path});
-    }
-
-    render(){
-        const { path } = this.state;
-
-        return( 
-            <header id="main-header">
-                    <BrowserRouter>
-                        <Switch>
-                            <Link to={(path !== "/") ? "/":""}>JSHunt</Link> 
-                        </Switch> 
-                    </BrowserRouter>
-            </header>
-        );
-    }
-    
-
-}
+export default Header;
 
 
 
