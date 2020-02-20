@@ -40,6 +40,8 @@
     color: #FFF;
 }
 
+
+
 .product-list .actions {
     display: flex;
     justify-content: space-between;
@@ -49,7 +51,6 @@
 .product-list .actions button {
     padding: 10px;
     border-radius: 5px;
-    border: 1px hidden #da552f;
     background: #da552f;
     color: #FFF;
     font-size: 16px;

@@ -8,6 +8,15 @@ header#main-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+header#main-header a{
+    color: #fff;
+}
 
-
+header#main-header a:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
 }
