@@ -4,8 +4,9 @@ import Routes from './routes';
 
 import "./styles.css";
 
-import Header from './components/Header';
+
 import Main from './pages/main/index';
+import Header from './components/Header';
 
 const App = () => (
   <div className="App">

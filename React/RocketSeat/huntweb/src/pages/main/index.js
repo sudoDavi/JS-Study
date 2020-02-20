@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import './styles.css';
 
+
 export default class Main extends Component {
     state ={
         products: [],
