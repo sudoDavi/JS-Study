@@ -1,11 +1,19 @@
 "use strict";
 
-function teste(x) {
-  var y = 2;
-
-  if (x > 5) {
-    console.log(x, y);
-  }
-}
-
-console.log(teste(10));
+var arr = [1, 3, 4, 5, 8, 10];
+var newArr = arr.map(function (item, index) {
+  return item + index;
+});
+console.log(newArr);
+var sum = arr.reduce(function (total, next) {
+  return total + next;
+});
+console.log(sum);
+var filter = arr.filter(function (item) {
+  return item % 2 === 0;
+});
+console.log(filter);
+var find = arr.find(function (item) {
+  return item === 2;
+});
+console.log(find);
