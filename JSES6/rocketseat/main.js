@@ -1,5 +1,23 @@
-const nome = "moido";
-const idade = 0;
+class Usuario {
+    constructor(email, senha){
+        email,
+        senha,
+        this.admin = false
+    }
+    isAdmin() {
+        return this.admin
+    }
+};
 
-// console.log("Meu nome é "+ nome + " e tenho "+ idade+" anos");
-console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
+class Admin extends Usuario {
+    constructor() {
+        super();
+        this.admin = true;
+    }
+}
+
+const User1 = new Usuario('email@teste.com', 'senha123');
+const Adm1 = new Admin('email@teste.com', 'senha123');
+
+console.log(User1.isAdmin()) // false
+console.log(Adm1.isAdmin()) // true
