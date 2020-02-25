@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const usuarios = [  
     { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },  
     { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },  
@@ -17,3 +18,8 @@ const idadeX2 = usuarios.map(usuario => (
         {...usuario, idade: usuario.idade * 2})
     ).filter(usuario => usuario.idade <=50);
 console.log(idadeX2);
+=======
+import { soma } from './functions';
+
+console.log(soma(1, 2));
+>>>>>>> configurando webpack
